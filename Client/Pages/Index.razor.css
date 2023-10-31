@@ -1,0 +1,109 @@
+﻿body {
+}
+
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
+    grid-auto-rows: minmax(min-content, max-content);
+}
+
+.row-color-one {
+    background-color: rgba(0, 26, 112, 0.25);
+    grid-column: 1 / span 8;
+    grid-row : 1 / span 1;
+}
+
+.top-box {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / span 6;
+    grid-row: 1 / span 1;
+    margin: 30px auto 30px auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.top-box h2 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.top-box button {
+    background-color: rgba(0, 26, 112, 1);
+    color: white;
+    border-width: 0;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.manifesto-row {
+    grid-column: 1 / span 8;
+    grid-row: 2 / span 2;
+}
+
+.row-title {
+    grid-column: 2 /span 6;
+    grid-row: 2 / span 1;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.manifesto-container {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / span 6;
+    grid-row: 3 / span 1;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+    .manifesto-container video {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .manifesto-container h3 {
+        
+    }
+
+.airtable-embed {
+    grid-column: 2 / span 6;
+    grid-row: 4 span 2;
+    justify-content: center;
+    align-content: center;
+}
+
+
+@media (min-width: 641px) {
+    .top-box h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .manifesto-container {
+        display: flex;
+        flex-direction: row;
+        grid-column: 1 /span 8;
+        grid-row: 3 / span 1;
+        justify-content: center;
+        align-content: center;
+        margin: 30px 30px 30px 30px;
+        text-align: left;
+    }
+
+        .manifesto-container video {
+            width: 50%;
+            height: auto;
+            margin: 0;
+        }
+
+        .manifesto-container h3 {
+            padding: 20px;
+        }
+}

@@ -1,0 +1,19 @@
+﻿body {
+}
+
+.name-email-form {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (min-width: 1025px) {
+    .name-email-form {
+        margin-left: 20px;
+    }
+}
