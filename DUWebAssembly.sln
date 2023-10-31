@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUWebAssembly.Client", "Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUWebAssembly.Shared", "Shared\DUWebAssembly.Shared.csproj", "{EB65D24F-C4CA-4A2F-AFAA-A8EF2A5F5BA1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{F48FDD96-90E7-4318-833B-AA3AC6D1AA1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
