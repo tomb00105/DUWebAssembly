@@ -8,11 +8,12 @@
     vertical-align: central;
 }
 
-    .top-row text {
+    .top-row ::deep text {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: rgba(255,255,255, 1);
         width: 45%;
+        font-weight: bold;
     }
 
 

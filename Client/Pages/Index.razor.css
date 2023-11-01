@@ -49,9 +49,14 @@
 }
 
 .row-c5 {
-    background-color: rgba(0, 26, 112, 1);
+    background-color: rgba(0, 26, 112, 0.9);
     grid-column: 1 / span 8;
     grid-row: 8 / span 1;
+}
+
+.row-c6 {
+    grid-column: 1 /span 8;
+    grid-row: 10 / span 1;
 }
 
 .inverted-title {
@@ -68,6 +73,7 @@
     margin-top: 10px;
     justify-self: center;
     align-self: center;
+    margin-bottom: 20px;
 }
 
 .top-box {
@@ -85,6 +91,12 @@
     text-align: center;
     color: white;
     font-size: 1.2rem; 
+    padding-top: 10px;
+   
+}
+
+.top-box .inverted-join-button {
+    margin-bottom: 10px;
 }
 
 .join-button {
@@ -108,6 +120,7 @@
     width: 80%;
     margin: auto;
     justify-content: center;
+    color: black;
 }
 
 .row-title {
@@ -141,12 +154,65 @@
         
     }
 
+.associations-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+.associations-image {
+    width: 20%;
+    height: auto;
+    margin: auto;
+}
+
+.seen-on-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .manifesto-form {
 }
 
 .row-logo {
     width: 20%;
     height: auto;
+}
+
+.text-with-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+    .text-with-image p {
+        font-size: 1rem;
+        text-align: justify;
+        height: auto;
+        vertical-align: middle;
+        max-width: 55%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .text-with-image .image-right {
+        border-radius: 90px;
+        width: 7rem;
+        height: 7rem;
+        align-self: center;
+        margin: 0 0 0 18px;
+    }
+
+.text-with-image .image-left {
+    border-radius: 90px;
+    width: 7rem;
+    height: 7rem;
+    align-self: center;
+    margin: 0 18px 0 0;
 }
 
 .rule-small-width {
