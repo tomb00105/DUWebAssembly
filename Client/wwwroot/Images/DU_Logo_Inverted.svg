@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50mm"
+   height="46mm"
+   viewBox="0 0 50 46"
+   version="1.1"
+   id="svg2446"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="noslog Inverted logo.svg"
+   inkscape:export-filename="D:\Joel\OneDrive\Documents\The Disability Union\Work\Marketing &amp; Design\Updated Logos 2020.06.17\Final versions\No taglines\noslog Inverted logo.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
+  <defs
+     id="defs2440">
+    <inkscape:perspective
+       id="perspective2450"
+       inkscape:persp3d-origin="25 : 12.666668 : 1"
+       inkscape:vp_z="50.270833 : -4.2708335 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : -4.2708335 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:pagecheckerboard="true"
+     showborder="true"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="56.878688"
+     inkscape:cx="154.83472"
+     inkscape:zoom="1.7763328"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#001a70"
+     id="base">
+    <inkscape:grid
+       id="grid2448"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2443">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       style="fill:#e4002b;fill-opacity:1;stroke:#e4002b;stroke-width:0.0919239;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 25.135417,0.52916653 2.6458327,11.112498 25.135417,4.4979165 47.625001,11.112498 Z"
+       id="path1157"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="path1157-2"
+       d="M 25.135417,45.508332 2.6458337,34.925001 25.135417,41.539582 47.625001,34.925001 Z"
+       style="fill:#e4002b;fill-opacity:1;stroke:#e4002b;stroke-width:0.0919237;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:11px;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="24.88154"
+       y="22.09441"
+       id="text13"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Cambria Math';-inkscape-font-specification:'Cambria Math';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         sodipodi:role="line"
+         id="tspan840"
+         x="24.88154"
+         y="22.09441">Disability</tspan><tspan
+         sodipodi:role="line"
+         x="24.88154"
+         y="33.528412"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.7px;font-family:'Gill Sans MT';-inkscape-font-specification:'Gill Sans MT Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         id="tspan15">Union</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'Gill Sans MT';-inkscape-font-specification:'Gill Sans MT';text-align:center;text-anchor:middle;fill:#ff001e;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="25.200611"
+       y="13.897095"
+       id="text844"><tspan
+         sodipodi:role="line"
+         id="tspan842"
+         x="25.200611"
+         y="13.897095"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'cambria math';-inkscape-font-specification:'cambria math';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">The</tspan></text>
+  </g>
+</svg>

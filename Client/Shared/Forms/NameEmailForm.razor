@@ -1,8 +1,8 @@
 ﻿<EditForm Model="@Model" OnSubmit="@Submit">
     <div class="name-email-form">
-        <h3>Download our manifesto now:</h3>
-        <InputText @bind-Value="@Model!.Name" />
-        <InputText @bind-Value="@Model!.Email" />
+        <h3><strong>Download our manifesto now:</strong></h3>
+        <InputText DisplayName="Name" placeholder="Name" @bind-Value="@Model!.Name" />
+        <InputText DisplayName="Email" placeholder="Email" @bind-Value="@Model!.Email" />
         <button type="submit">Get the manifesto</button>
     </div>
 </EditForm>
@@ -19,8 +19,8 @@
 
     public class NameEmail
     {
-        public string? Name { get; set; } = "Name";
-        public string? Email { get; set; } = "Email";
+        public string? Name { get; set; } = "";
+        public string? Email { get; set; } = "";
     }
 
 }
