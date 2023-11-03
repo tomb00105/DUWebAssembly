@@ -3,7 +3,7 @@
 
 .billboard {
     background-color: rgba(0, 26, 112, 1);
-    padding: 0 0 10px 0;
+    padding: 30px 0 40px 0;
 }
 
 .billboard-content {
@@ -33,6 +33,7 @@
     .billboard-content button {
         width: 100%;
         margin: 0;
+        font-size: calc(.875rem + (0 * (100vw - 400px)/ 624));
         background-color: white;
         color: rgb(0, 26, 112);
         border: 0;
@@ -58,6 +59,42 @@
             fill: #fff;
             box-shadow: inset 0 0 0 2px rgb(0, 26, 112);
         }
+
+.content-section {
+    padding: 40px 0 40px 0;
+}
+
+.content {
+    padding: 0 4vw;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.neutral-background {
+    background-color: #f4ede4;
+}
+
+.video-with-manifesto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+
+.intro-video {
+    width: 80%;
+    min-width: 18rem;
+    max-width: 40rem;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
 
 .grid-container {
     width: 100%;
@@ -178,7 +215,7 @@
 .manifesto-row {
     grid-column: 1 / span 8;
     grid-row: 2 / span 2;
-    background-color: rgba(0, 26, 112, 0.25);
+    background-color: #f4ede4;
     padding: 0 0 0 0;
 }
 
@@ -292,15 +329,21 @@
     margin-right: auto;
 }
 
-
-@media (min-width: 641px) {
-    .top-box h2 {
-        text-align: center;
-        font-size: 8vw;
+@media(min-width: 20rem) {
+    .billboard-content h2 {
+        font-size: calc(2rem + (20 * (100vw - 400px)/ 624));
     }
 }
 
-@media (min-width: 1025px) {
+@media(min-width: 64rem) {
+    .billboard-content {
+        text-align: left;
+    }
+
+    .billboard-content h2 {
+        font-size: 3.25rem;
+    }
+
     .top-box {
         display: flex;
         flex-direction: column;
@@ -358,18 +401,4 @@
         .manifesto-container hr {
             display: none;
         }
-}
-
-
-@media(min-width: 25rem) {
-    .billboard-content h2 {
-        font-size: calc(2rem + (20 * (100vw - 400px)/ 624));
-    }
-}
-
-@media(min-width: 64rem) {
-    .billboard-content h2 {
-        font-size: 3.25rem;
-        text-align: left;
-    }
 }

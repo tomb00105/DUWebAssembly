@@ -8,7 +8,7 @@
 }
 
 .top-row {
-    height: 15vh;
+    height: 12vh!important;
     width: 100%;
     background-color: #001A70;
 }
@@ -29,7 +29,7 @@ div .container-fluid {
     align-content: start;
     padding-top: 10px;
     width: 100%;
-    height: 100%;
+    height: 10vh;
     margin: 0;
 }
 
@@ -86,7 +86,13 @@ div .container-fluid ::deep img {
             color: rgb(255, 255, 255);
         }
 
-@media (min-width: 641px) {
+@media(max-width: 20rem) {
+    .top-row h3 {
+        display: none;
+    }
+}
+
+@media (min-width: 40rem) {
     .navbar-toggler {
         display: none;
     }
