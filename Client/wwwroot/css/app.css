@@ -1,11 +1,7 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-@font-face {
-    font-family: 'Larsseit';
-    src: url('../Fonts/Larsseit/Larsseit-Bold.otf')
-}
 
 html, body {
-    font-family: 'Larsseit', Calibri, Arial, sans-serif;
+    font-family: Tahoma, Calibri, Arial, sans-serif;
 }
 
 p {

@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Shared\DUWebAssembly.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Fonts\" />
+  </ItemGroup>
+
 </Project>
