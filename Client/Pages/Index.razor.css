@@ -1,6 +1,60 @@
 ﻿body {
 }
 
+.billboard {
+    background-color: rgba(0, 26, 112, 1);
+    padding: 0 0 10px 0;
+}
+
+.billboard-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    font-weight: bold;
+    padding: 0 4vw;
+}
+.billboard-content h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.billboard-content p {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+    .billboard-content button {
+        width: 100%;
+        margin: 0;
+        background-color: white;
+        color: rgb(0, 26, 112);
+        border: 0;
+        fill: rgb(0, 26, 112);
+        box-shadow: inset 0 0 0 1px rgb(0, 26, 112);
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: 700;
+        line-height: 1.2857;
+        text-transform: uppercase;
+        padding: 19px 40px 20px;
+        display: block;
+        transition: box-shadow 420ms cubic-bezier(.165,.84,.44,1),color 420ms cubic-bezier(.165,.84,.44,1),background 420ms cubic-bezier(.165,.84,.44,1);
+    }
+
+        .billboard-content button:hover {
+            box-shadow: inset 0 0 0 2px rgb(0, 26, 112);
+        }
+
+        .billboard-content button:active {
+            background-color: rgb(0, 26, 112);
+            color: #fff;
+            fill: #fff;
+            box-shadow: inset 0 0 0 2px rgb(0, 26, 112);
+        }
 
 .grid-container {
     width: 100%;
@@ -10,7 +64,7 @@
 }
 
 .row-c1 {
-    background-color: rgba(0, 26, 112, 0.9);
+    background-color: rgba(0, 26, 112, 1);
     grid-column: 1 / span 8;
     grid-row: 1 / span 1;
 }
@@ -74,25 +128,29 @@
     justify-self: center;
     align-self: center;
     margin-bottom: 20px;
+    transition: background-color 0.5s;
+}
+
+.inverted-join-button:hover {
+    background-color: rgba(255, 0, 0, 1);
 }
 
 .top-box {
     display: flex;
     flex-direction: column;
-    grid-column: 2 / span 6;    
+    grid-column: 1 / span 8;    
     grid-row: 1 / span 1;
-    margin: 20px auto 20px auto;
     justify-content: center;
     align-content: center;
     color: white;
+    padding: 0, 40vw, 0, 40vw;
 }
 
 .top-box h2 {
     text-align: center;
     color: white;
-    font-size: 1.2rem; 
-    padding-top: 10px;
-   
+    font-size: 5vw;
+    max-width: 38rem;
 }
 
 .top-box .inverted-join-button {
@@ -107,6 +165,11 @@
     height: 50px;
     justify-self: center;
     align-self: center;
+    transition: background-color 0.5s;
+}
+
+.join-button:hover {
+    background-color: rgba(0, 0, 150, 1);
 }
 
 .manifesto-row {
@@ -230,7 +293,7 @@
 @media (min-width: 641px) {
     .top-box h2 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 8vw;
     }
 }
 
@@ -257,7 +320,6 @@
     .top-box h2 {
         text-align: left;
         color: white;
-        font-size: 1.2rem;
     }
 
     .manifesto-row {
@@ -293,4 +355,18 @@
         .manifesto-container hr {
             display: none;
         }
+}
+
+
+@media(min-width: 25rem) {
+    .billboard-content h2 {
+        font-size: calc(2rem + (20 * (100vw - 400px)/ 624));
+    }
+}
+
+@media(min-width: 64rem) {
+    .billboard-content h2 {
+        font-size: 3.25rem;
+        text-align: left;
+    }
 }

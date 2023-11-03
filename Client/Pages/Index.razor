@@ -1,27 +1,18 @@
 ﻿@page "/"
 
 <PageTitle>Disability Union - Home</PageTitle>
+<section class="billboard">
 
+    <div class="billboard-content">
+        <h2>
+            <strong>Bringing Disabled People together to build a better future.</strong>
+        </h2>
+        <p>That’s why more people are joining every day, will you be next?</p>
+        <button>Join now</button>
+    </div>
+</section>
 <div class="grid-container">
     <div class="row-c1">
-    </div>
-    <div class="top-box">
-        <hr class="rule-small-width" />
-        <h2>
-            We’re bringing Disabled People together to build a brighter future with:
-            <br />
-            <br />
-            <strong>No Pity.</strong>
-            <br />
-            <strong>No Barriers.</strong>
-            <br />
-            <strong>No One Left Behind.</strong>
-            <br />
-            <br />
-            That’s why more people are joining every day, will you be next?
-        </h2>
-        <button class="inverted-join-button">Join now</button>
-        <hr class="rule-small-width"/>
     </div>
     <div class="manifesto-row">
         <div class="row-title">
@@ -115,3 +106,13 @@
         </div>
     </div>
 </div>
+
+
+@code {
+    private string ButtonOneClass { get; set; } = "inverted-join-button";
+
+    private void MouseOverButton()
+    {
+        ButtonOneClass = "join-button";
+    }
+}

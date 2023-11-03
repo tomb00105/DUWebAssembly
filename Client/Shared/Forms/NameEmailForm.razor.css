@@ -35,14 +35,22 @@
 }
 
 ::deep button {
-    width: 150px;
-    height: 30px;
+    width: 10rem;
+    height: 2.5rem;
     border-width: 0;
     background-color: rgba(0, 26, 122, 1);
     color: white;
     border-radius: 5px;
     margin-top: 10px;
+    font-size: 1rem;
+    transition: background-color 0.5s, height 0.5s, width 0.5s, font-size 0.5s;
 }
+    ::deep button:hover {
+        background-color: rgba(0, 0, 200, 1);
+        height: 3rem;
+        width: 12rem;
+        font-size: 1.2rem;
+    }
 
 @media (min-width: 641px) {
     .name-email-form {
