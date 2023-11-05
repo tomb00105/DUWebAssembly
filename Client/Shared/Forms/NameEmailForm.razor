@@ -1,11 +1,9 @@
 ﻿<EditForm Model="@Model" OnSubmit="@Submit">
     <div class="name-email-form">
-        <h4>Download our manifesto now:</h4>
-            <img src="Images/DU_Manifesto.webp" />
+        <h5>Download our manifesto now:</h5>
                 <InputText DisplayName="Name" placeholder="Name" @bind-Value="@Model!.Name" />
                 <InputText DisplayName="Email" placeholder="Email" @bind-Value="@Model!.Email" />
            
-        
         <button type="submit">Get the manifesto</button>
     </div>
 </EditForm>
@@ -14,10 +12,14 @@
 @code {
     public NameEmail? Model { get; set; }
 
+    [Parameter]
+    public Action SubmitAction { get; set; }
+
     protected override void OnInitialized() => Model ??= new();
 
     private void Submit()
     {
+        SubmitAction?.Invoke();
     }
 
     public class NameEmail
