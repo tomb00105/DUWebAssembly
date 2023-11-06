@@ -13,70 +13,27 @@
 </section>
 <section class="content-section neutral-background">
     <div class="content">
-        <h2 class="section-title">What is The Disability Union?</h2>
+        <h2 class="section-title">What We're All About...</h2>
         <div class="video-with-manifesto">
-            <video class="intro-video" controls="controls">
+            <video class="intro-video" controls="controls">s
                 <source src="Videos/DU_Home_Video.mp4" type="video/mp4" />
             </video>
-            <NameEmailForm SubmitAction="SubmitManifestoForm"></NameEmailForm>
+            <div class="manifesto-form">
+                <img src="Images/DU_Manifesto.webp" alt="No pity. No barriers. No one left behind. The Disability Union Manifesto"/>
+                <EditForm Model="@Model" OnSubmit="@Submit">
+                    <div class="video-form">
+                        <InputText DisplayName="Name" placeholder="Name" @bind-Value="@Model!.Name" />
+                        <InputText DisplayName="Email" placeholder="Email" @bind-Value="@Model!.Email" />
+
+                        <button type="submit">Get the manifesto</button>
+                    </div>
+                </EditForm>
+            </div>
         </div>
     </div>
 </section>
     
-    <div class="row-c3">
-        <div class="row-title">
-            <h2>Our Mission</h2>
-        </div>
-        <div class="mission-row">
-            <hr />
-                <h3>Community</h3>
-            <div class="text-with-image">
-                <p>
-                    By bringing Disabled People together in our  online community and campaigns we help each other, make friends and make change together.
-                </p>
-                <img class="image-right" src="Images/DU_Community.jpg" />
-            </div>
-            <hr />
-                <h3>Opportunity</h3>
-            <div class="text-with-image">
-                <img class="image-left" src="Images/DU_Opportunity.jpg" />
-                <p>
-                    We provide opportunities around employment, politics, sports and every other aspect of life through our events, online skills academy and casework.
-                </p>
-            </div>
-            <hr />
-            <h3>Unity</h3>
-            <div class="text-with-image">
-                <p>
-                    People with power only listen to two things: money and people. You need a lot of one or the other to get them to listen.
-
-                    We’re building the people power to knock discrimination dead.
-                </p>
-                <img class="image-right" src="Images/DU_Unity.jpg" />
-            </div>
-            <hr />
-        </div>
-    </div>
-    <div class="row-c4">
-        <div class="row-title">
-            <h2>Four Reasons to Join Today</h2>
-        </div>
-        <div class="mission-row">
-            <hr />
-            <h3>1:1 Support When You Need it Most</h3>
-            <p>We'll help you get the answers you deserve</p>
-            <hr />
-            <h3>Help us Build a Better Future</h3>
-            <p>Join our mission as we agitate, educate and organise to knock discrimination dead.</p>
-            <hr />
-            <h3>Gain Purpose and Power</h3>
-            <p>We’ll help you find your purpose and achieve your goals.</p>
-            <hr />
-            <h3>The Next Generation</h3>
-            <p>Want to stand up for your Disabled Child OR need some support from people who understand? Come join the gang, we’ve got your back.</p>
-            <hr />
-        </div>
-    </div>
+    
     <div class="row-c5">
         <div class="row-title inverted-title">
             <img class="row-logo" src="Images/DU_Logo_Inverted.svg" />
@@ -113,5 +70,23 @@
     private void SubmitManifestoForm()
     {
 
+    }
+
+    public NameEmail? Model { get; set; }
+
+    [Parameter]
+    public Action SubmitAction { get; set; }
+
+    protected override void OnInitialized() => Model ??= new();
+
+    private void Submit()
+    {
+        SubmitAction?.Invoke();
+    }
+
+    public class NameEmail
+    {
+        public string? Name { get; set; } = "";
+        public string? Email { get; set; } = "";
     }
 }
