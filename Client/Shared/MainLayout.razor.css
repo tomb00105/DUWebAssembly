@@ -9,6 +9,7 @@ main {
 }
 
 .sidebar {
+    z-index: 2;
 }
 
 .top-row {
