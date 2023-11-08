@@ -78,13 +78,12 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    overflow: clip;
+    overflow: hidden;
     padding: 30px 0 0 4vw;
 }
 
 .section-title {
     font-weight: bold;
-    width: 100%;
 }
 
 .item-title {
@@ -180,22 +179,22 @@
     }
 
 .side-video {
-    width: 30rem;
+    width: 20rem;
     height: auto;
     z-index: 0;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .to-left {
     position: relative;
     left: -50px;
-    border-radius: 0 600px 50px 0;
+    border-radius: 0 50px 10px 0;
 }
 
 .to-right {
     position: relative;
     right: -50px;
-    border-radius: 600px 0 0 50px;
+    border-radius: 50px 0 0 10px;
 }
 
 .inverted-join-button {
@@ -245,6 +244,10 @@
         width: 80%; 
         
     }
+
+    .side-video {
+        width: calc(20rem + (200 * (100vw - 400px) / 624));
+    }
 }
 
 @media(min-width: 46rem) {
@@ -258,6 +261,10 @@
 
     .video-form ::deep button {
         width: 100%;
+    }
+
+    .side-video {
+        width: calc(20rem + (100 * (100vw - 400px) / 624));
     }
 }
 
