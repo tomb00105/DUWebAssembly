@@ -9,12 +9,14 @@
 .billboard-content {
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: left; 
     font-weight: bold;
     padding: 0 4vw;
 }
+
 .billboard-content h2 {
     font-size: 2rem;
     max-width: 38.025rem;
@@ -31,8 +33,9 @@
     }
 
     .billboard-content button {
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        max-width: 30rem;
+        margin: auto;
         font-size: calc(.875rem + (0 * (100vw - 400px)/ 624));
         background-color: white;
         color: rgb(0, 26, 112);
@@ -212,7 +215,7 @@
 
 .side-video {
     width: 17rem;
-    max-width: 35rem;
+    max-width: 30rem;
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -278,11 +281,11 @@
 
 @media(min-width: 20rem) {
     .billboard-content h2 {
-        font-size: calc(2rem + (20 * (100vw - 400px)/ 624));
+        font-size: calc(2rem + (12 * (100vw - 400px)/ 624));
     }
 
     .billboard-content p {
-        font-size: calc(1rem + (10 * (100vw - 400px) / 624));
+        font-size: calc(1rem + (5 * (100vw - 400px) / 624));
     }
 
     .section-title {
@@ -343,26 +346,27 @@
     }
 
     .side-video {
-        width: calc(17rem + (500 * (100vw - 400px) / 624));
+        width: calc(17rem + (250 * (100vw - 400px) / 624));
         
     }
 }
 
 @media(min-width: 64rem) {
-    .billboard-content {
-        text-align: left;
-    }
+
+    
 
     .billboard-content h2 {
-        font-size: 3.25rem;
+        font-size: 3rem;
     }
 
+    
+
     .billboard-content p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .billboard-content button {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .section-title {
@@ -390,6 +394,9 @@
 }
 
 @media(min-width: 70rem) {
+
+    
+
     .item-title {
         margin-top: 0;
     }
@@ -432,6 +439,25 @@
 }
 
 @media(min-width: 80rem) {
+
+    .billboard-content .billboard-text {
+        max-width: 30rem;
+    }
+
+    .billboard-content {
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        font-weight: bold;
+        padding: 0 1vw;
+    }
+
+    .intro-video {
+        max-width: 30rem;
+    }
     .section-title {
         text-align: left;
         margin-left: calc(5vw + 40px);
