@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUWebAssembly.Server", "Server\DUWebAssembly.Server.csproj", "{D8A588B6-0D9B-4678-82B1-D008DE9154AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DUWebAssembly.Server", "Server\DUWebAssembly.Server.csproj", "{D8A588B6-0D9B-4678-82B1-D008DE9154AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUWebAssembly.Client", "Client\DUWebAssembly.Client.csproj", "{4987BB5A-2596-4C73-A462-270A987B0770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DUWebAssembly.Client", "Client\DUWebAssembly.Client.csproj", "{4987BB5A-2596-4C73-A462-270A987B0770}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUWebAssembly.Shared", "Shared\DUWebAssembly.Shared.csproj", "{EB65D24F-C4CA-4A2F-AFAA-A8EF2A5F5BA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DUWebAssembly.Shared", "Shared\DUWebAssembly.Shared.csproj", "{EB65D24F-C4CA-4A2F-AFAA-A8EF2A5F5BA1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{F48FDD96-90E7-4318-833B-AA3AC6D1AA1E}"
 EndProject

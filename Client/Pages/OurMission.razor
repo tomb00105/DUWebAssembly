@@ -1,0 +1,101 @@
+﻿@page "/our-mission"
+
+<PageTitle>Disability Union - Our Mission</PageTitle>
+<section class="billboard">
+    <div class="billboard-content">
+        <h2>
+            <strong>
+                A World With:<br />
+                <u>
+                    No Pity.<br />
+                    No Barriers.<br />
+                    No One Left Behind.
+                </u>
+            </strong>
+        </h2>
+        <video class="intro-video" controls="controls">
+            <source src="Videos/DU_Manifesto_Video.mp4" type="video/mp4" />
+        </video>
+    </div>
+</section>
+
+<section class="content-section neutral-background">
+    <div class="content">
+        <div class="video-with-manifesto">
+
+            <div class="manifesto-form">
+                <img src="Images/DU_Manifesto.webp" alt="No pity. No barriers. No one left behind. The Disability Union Manifesto" />
+                <EditForm Model="@Model" OnSubmit="@Submit">
+                    <div class="video-form">
+                        <InputText DisplayName="Name" placeholder="Name" @bind-Value="@Model!.Name" />
+                        <InputText DisplayName="Email" placeholder="Email" @bind-Value="@Model!.Email" />
+
+                        <button type="submit">Get the manifesto</button>
+                    </div>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section blank-background">
+    <div class="content">
+        <h3>No Pity</h3>
+        <h3>No Barriers</h3>
+        <h3>No one left behind</h3>
+    </div>
+</section>
+
+<section class="content-section neutral-background">
+    <div class="content">
+        <div class="video-with-manifesto">
+
+            <div class="manifesto-form">
+                <img src="Images/DU_Manifesto.webp" alt="No pity. No barriers. No one left behind. The Disability Union Manifesto" />
+                <EditForm Model="@Model" OnSubmit="@Submit">
+                    <div class="video-form">
+                        <InputText DisplayName="Name" placeholder="Name" @bind-Value="@Model!.Name" />
+                        <InputText DisplayName="Email" placeholder="Email" @bind-Value="@Model!.Email" />
+
+                        <button type="submit">Get the manifesto</button>
+                    </div>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section" style="background-color:rgb(50, 50, 50)">
+    <div class="content">
+        <div class="contact-row">
+            <h5 class="contact-info">Call: 02382 546 695</h5>
+            <h5 class="contact-info">Email: support@disabilityunion.co.uk</h5>
+        </div>
+    </div>
+</section>
+
+<section class="content-section footer-row">
+    <div>
+        TEST
+    </div>
+</section>
+
+@code {
+    public NameEmail? Model { get; set; }
+
+    [Parameter]
+    public Action SubmitAction { get; set; }
+
+    protected override void OnInitialized() => Model ??= new();
+
+    private void Submit()
+    {
+        SubmitAction?.Invoke();
+    }
+
+    public class NameEmail
+    {
+        public string? Name { get; set; } = "";
+        public string? Email { get; set; } = "";
+    }
+}
